@@ -2,7 +2,7 @@ function compute()
 {
 	principalElement = document.getElementById("principal");
     principal = principalElement.value;
-	if(isNaN(principal) || principal.length == 0) {
+	if(isNaN(principal) || principal.length == 0 || principal < 0) {
 		alert("Please insert a positive number");
 		principalElement.focus();
 		principalElement.classList.add("redBorder");
